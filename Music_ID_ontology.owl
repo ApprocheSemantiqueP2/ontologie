@@ -1,0 +1,954 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#"
+     xml:base="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos1="https://www.w3.org/2009/08/skos-reference/skos.html#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- https://www.w3.org/2009/08/skos-reference/skos.html#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="https://www.w3.org/2009/08/skos-reference/skos.html#altLabel"/>
+    
+
+
+    <!-- https://www.w3.org/2009/08/skos-reference/skos.html#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="https://www.w3.org/2009/08/skos-reference/skos.html#prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Contient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Contient">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#ProvientDe"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Release"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#music"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:13:02Z</dc:date>
+        <rdfs:label>contient comme chanson</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#EstCreePar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#EstCreePar">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#cree"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourCompositeur"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-13T16:17:22Z</dc:date>
+        <rdfs:label>est composé par</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#EstJouePar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#EstJouePar">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#cree"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-13T16:18:46Z</dc:date>
+        <rdfs:label>est joué par</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#ProvientDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#ProvientDe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#music"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Release"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:14:02Z</dc:date>
+        <rdfs:label>vient de</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourAuteur -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourAuteur">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourCreateur"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#music"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Auteur"/>
+        <rdfs:label xml:lang="fr">Paroles écrites par</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourCompositeur -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourCompositeur">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourCreateur"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#music"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Compositeur"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-13T16:12:58Z</dc:date>
+        <rdfs:label>a pour compositeur</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourCreateur -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourCreateur">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Release"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#music"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Auteur"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-13T16:12:17Z</dc:date>
+        <rdfs:label>Fait par</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourGenre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Release"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#music"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Genre"/>
+        <rdfs:label>A pour Genre</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourInterprete -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourInterprete">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourCreateur"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#music"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Interprète"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-13T16:12:32Z</dc:date>
+        <rdfs:label xml:lang="fr">a pour interprete</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourParoles -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourParoles">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#music"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Paroles"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:12:19Z</dc:date>
+        <rdfs:label>A pour paroles</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourRelease -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourRelease">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#music"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Release"/>
+        <rdfs:label>Paru dans</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourTheme -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourTheme">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#music"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Thème"/>
+        <rdfs:label xml:lang="fr">Parle du thème</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aSorti -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aSorti">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Artiste"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Release"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#cree -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#cree">
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-13T16:17:06Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#estBlues -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#estBlues">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourGenre"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#estClassique -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#estClassique">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourGenre"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#estCountry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#estCountry">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourGenre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#estElectro -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#estElectro">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourGenre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#estHipHop -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#estHipHop">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourGenre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#estJazz -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#estJazz">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourGenre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#estPop -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#estPop">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourGenre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#estRap -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#estRap">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourGenre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#estReggae -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#estReggae">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourGenre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#estRock -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#estRock">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourGenre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#estR&amp;B -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#estR&amp;B">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#aPourGenre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#BPM -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#BPM">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#music"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-30T07:30:42Z</dc:date>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Biographie -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Biographie">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Artiste"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Date_de_sortie -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Date_de_sortie">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Release"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <skos1:prefLabel xml:lang="fr">Date de sortie</skos1:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Langue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Langue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Paroles"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-30T06:43:43Z</dc:date>
+        <rdfs:label>Langue(s)</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Nom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Nom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Artiste"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Popularity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Popularity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Artiste"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-30T07:09:39Z</dc:date>
+        <rdfs:label>Popularité</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Adversité -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Adversité">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Epreuve"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:25:25Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Album -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Album">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Release"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T18:09:54Z</dc:date>
+        <rdfs:label>Album</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Amitié -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Amitié">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Thème"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:28:27Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Amour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Amour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Thème"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:24:01Z</dc:date>
+        <rdfs:label xml:lang="fr">Relation amoureuse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Amusement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Amusement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Thème"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:25:37Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Animosité -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Animosité">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Thème"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:28:42Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Argent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Argent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Thème"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:26:53Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Armes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Armes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Thème"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:27:13Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Artiste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Artiste">
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T18:03:02Z</dc:date>
+        <rdfs:label>Artiste</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Auteur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Auteur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Artiste"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T18:22:07Z</dc:date>
+        <rdfs:label>Auteur</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Blues -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Blues">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Genre"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:19:17Z</dc:date>
+        <rdfs:label>Blues</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Chanteur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Chanteur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Interprète"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-30T06:41:30Z</dc:date>
+        <rdfs:label>Chanteur</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Classique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Classique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Genre"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:19:17Z</dc:date>
+        <rdfs:label>Classique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Combativité -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Combativité">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Epreuve"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:25:25Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Compositeur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Compositeur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Auteur"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T18:22:13Z</dc:date>
+        <rdfs:label>Compositeur</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Conflit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Conflit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Histoire"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:26:17Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Deuil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Deuil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Peine"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:24:01Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Drogue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Drogue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Thème"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:27:04Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#EP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#EP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Release"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T18:09:54Z</dc:date>
+        <rdfs:label>EP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Ecrivain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Ecrivain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Auteur"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-30T06:41:19Z</dc:date>
+        <rdfs:label>Écrivain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Electro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Electro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Genre"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:19:17Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Energie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Energie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Thème"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:24:01Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Epreuve -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Epreuve">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Thème"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:24:59Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Fantasy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Fantasy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Thème"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:24:01Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Fidélité -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Fidélité">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Amour"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:31:34Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Genre">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Release"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T18:05:42Z</dc:date>
+        <rdfs:label>Genre musical</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Guerre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Guerre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Histoire"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:26:17Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Histoire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Histoire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Thème"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:24:01Z</dc:date>
+        <rdfs:label>Evenement historique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Infidélité -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Infidélité">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Amour"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:31:34Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Interprète -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Interprète">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Artiste"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T18:22:19Z</dc:date>
+        <rdfs:label>Interprète</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Invasion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Invasion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Histoire"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:26:17Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Jazz -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Jazz">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Genre"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:19:17Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Joie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Joie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Thème"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:24:01Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Metal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Metal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Genre"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-30T07:31:59Z</dc:date>
+        <rdfs:label>Métal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Musicien -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Musicien">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Interprète"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-30T06:42:44Z</dc:date>
+        <rdfs:label>musicien</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Paroles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Paroles">
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T18:03:34Z</dc:date>
+        <rdfs:label>Paroles</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Peine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Peine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Thème"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:24:01Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Pop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Pop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Genre"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:19:17Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Rap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Rap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Genre"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:19:17Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Reggae -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Reggae">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Release -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Release">
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T18:03:18Z</dc:date>
+        <rdfs:label>Parution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Religion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Religion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Thème"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:33:37Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Rock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Rock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Genre"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:19:17Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Résilience -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Résilience">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Epreuve"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:27:22Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Single -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Single">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Release"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T18:09:54Z</dc:date>
+        <rdfs:label>Single</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Thème -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Thème">
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T18:21:32Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Trahison -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Trahison">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Thème"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:28:48Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#hiphop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#hiphop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Genre"/>
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-05T19:19:17Z</dc:date>
+        <rdfs:label>Hip-hop</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#music -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#music">
+        <dc:creator>4tris</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-30T06:57:42Z</dc:date>
+        <rdfs:label xml:lang="fr">Chanson</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#R&amp;B -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#R&amp;B">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Genre"/>
+        <rdfs:label>Rythm and Bass</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Album"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#EP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Single"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Blues"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Classique"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Electro"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Jazz"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Pop"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Rap"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#Rock"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/4tris/ontologies/2023/2/untitled-ontology-3#hiphop"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
